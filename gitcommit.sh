@@ -6,7 +6,7 @@ echo
 echo "What would you like to add to github?"
 echo "Please provide the absolute or full path from the directory your are currently in."
 read folderPath
-if [[ -z "$folderPath"  ]]; then
+if [[ ! -d "$folderPath"  ]]; then
 	echo "This is not a valid folder path"
 	exit 1
 else
